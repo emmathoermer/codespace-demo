@@ -5,7 +5,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html; charset=utf-8")
         self.end_headers()
-        self.wfile.write(b"Hello from GitHub Codespaces!")
+        self.wfile.write(b"这是一个codespace测试页面！")
 
 if __name__ == "__main__":
     server = HTTPServer(("0.0.0.0", 8000), Handler)
